@@ -17,6 +17,8 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+<!-- PAGE -->
 <div id="page" class="site transition-margin-left js-transition-left">
 
     <!-- SIDENAV -->
@@ -76,4 +78,5 @@
 	</header>
     <!-- END HEADER -->
 
+    <!-- CONTENT -->
 	<div id="content">
