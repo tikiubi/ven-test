@@ -1,0 +1,564 @@
+/*
+Theme Name: VEN Test
+Author: Bao Tran
+Author URI: https://www.linkedin.com/in/tikiubi/
+Description:  Theme based on VEN Creative test
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: ven
+*/
+
+/*--------------------------------------------------------------
+# IMPORT FONTS
+--------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+@font-face {
+  font-family: 'ChunkFive';
+  src: url('assets/fonts/ChunkFive.eot'); /* IE9 Compat Modes */
+  src: url('assets/fonts/ChunkFive.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('assets/fonts/ChunkFive.woff2') format('woff2'), /* Super Modern Browsers */
+    url('assets/fonts/ChunkFive.woff') format('woff'), /* Pretty Modern Browsers */
+    url('assets/fonts/ChunkFive.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'ChunkFive Print';
+  src: url('assets/fonts/ChunkFivePrint.eot'); /* IE9 Compat Modes */
+  src: url('assets/fonts/ChunkFivePrint.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('assets/fonts/ChunkFivePrint.woff2') format('woff2'), /* Super Modern Browsers */
+  url('assets/fonts/ChunkFivePrint.woff') format('woff'), /* Pretty Modern Browsers */
+  url('assets/fonts/ChunkFivePrint.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+/*--------------------------------------------------------------
+# NORMALIZE
+--------------------------------------------------------------*/
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: auto;
+  font-family: 'Karla', sans-serif;
+  background: #F5EFDE;
+}
+
+a {
+  color: #000000;
+}
+
+a:hover {
+  color: #cf830b;
+  text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# HELPERS
+--------------------------------------------------------------*/
+
+.font--chunkfive-print {
+  font-family: 'ChunkFive Print';
+  font-weight: normal;
+}
+.font--chunkfive {
+  font-family: 'ChunkFive';
+  font-weight: normal;
+}
+.link--underline {
+  text-decoration: none;
+  padding-bottom: 10px;
+  border-bottom: 3px solid;
+}
+
+.link--underline--white {
+  color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+
+.link--underline--black {
+  color: #000000;
+  border-bottom-color: #000000;
+}
+
+.col--no-padding {
+  padding: 0px;
+}
+
+.bg-black {
+  background: #000000;
+}
+
+.link-black {
+  color: #000000;
+}
+
+.btn-transparent {
+  background: transparent;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.transition-margin-left {
+  transition: margin-left .25s;
+}
+
+.margin-left-500 {
+  margin-left: 500px;
+}
+
+.width-500 {
+  width: 500px !important;
+}
+
+/*--------------------------------------------------------------
+# HEADER
+--------------------------------------------------------------*/
+
+header.scrolled {
+  background: #F5EFDE;
+}
+
+@media (min-width:1440px) {
+  header {
+    padding: 40px 0 40px 125px
+  }
+}
+
+.sidebar-toggle {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 42px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.sidebar-toggle__button {
+  background: #000000;
+  width: 56px;
+  height: 56px;
+  padding: 17px 18px;
+  margin-bottom: 5px;
+}
+
+.sidebar-toggle__button span {
+  width: 20px;
+  height: 2px;
+  background: #ffffff;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.sidebar-toggle__button span:last-child {
+  margin-bottom: 0px;
+  font-size: 15px;
+  line-height: 97.4%;
+}
+
+.sidebar-toggle__text {
+  font-size: 15px;
+}
+
+.navbar {
+  align-items: flex-start;
+}
+
+.navbar__logo img {
+  max-height: 80px;
+}
+
+.navbar__contact {
+  position: relative;
+}
+
+.navbar__contact img {
+  position: absolute;
+  top: -40px;
+  left: -60px;
+}
+
+.navbar__contact__text {
+  font-size: 13px;
+  line-height: 15px;
+  margin-bottom: 8px;
+}
+
+.navbar__contact__phone {
+  font-size: 18px;
+  line-height: 97.4%;
+}
+
+.navbar__button {
+  padding: 10px 50px;
+}
+
+/*--------------------------------------------------------------
+# FOOTER
+--------------------------------------------------------------*/
+
+footer {
+  padding-top: 120px;
+  font-size: 14px;
+  line-height: 130%;
+  color: #F5EFDE;;
+}
+
+.footer__logo {
+  float:left;
+  margin-right: 30px;
+}
+
+footer .widget-title {
+  font-family: 'ChunkFive';
+  font-size: 20px;
+  line-height: 120%;
+  color: #F5EFDE;
+  margin-bottom: 20px;
+}
+
+footer a{
+  color: #F5EFDE;
+}
+
+footer .menu {
+  list-style: none;
+  padding-left: 0px;
+}
+
+footer .menu li {
+  padding: 10px 0px;
+}
+
+footer .menu li:first-child {
+  padding-top: 0px;
+}
+
+.footer__3-columns-list{
+  margin-top: 50px;
+}
+
+.footer__3-columns-list ul {
+  list-style: none;
+  columns: 3;
+  padding-left: 0px
+}
+
+.footer__3-columns-list li {
+  margin-bottom: 10px;
+}
+
+.footer__3-columns-list a {
+  font-size: 14px;
+  line-height: 130%;
+}
+
+.footer__form__title {
+  font-size: 52px;
+  line-height: 97.4%;
+  color: #F5EFDE;
+  margin-bottom: 30px;
+}
+
+.footer__form__body input {
+  width: 260px !important;
+}
+
+.footer__form__body input, .footer__form__body button {
+  height: 66px;
+  border: 2px solid #F5EFDE;
+  border-radius: 0px;
+}
+
+.footer__form__body button {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.footer__form__body input {
+  background: transparent;
+}
+
+.footer__form__body button {
+  background: #F5EFDE;
+  font-size: 20px;
+  line-height: 97.4%;
+  text-align: center;
+  color: #000000;
+}
+
+.footer__form__lead {
+  font-size: 12px;
+  line-height: 140%;
+  color: #FFFFFF;
+  margin-top: 10px;
+}
+
+.footer__copyright {
+  font-size: 10px;
+  line-height: 140%;
+  text-align: center;
+  color: #F5EFDE;
+  margin-top: 30px;
+}
+
+/*--------------------------------------------------------------
+# SIDENAV
+--------------------------------------------------------------*/
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  transition: 0.25s;
+}
+
+.sidenav__wrap {
+  padding: 60px 100px;
+}
+
+.sidenav__menu li {
+  margin-bottom: 50px;
+}
+
+.sidenav__menu a {
+  font-family: 'ChunkFive';
+  font-size: 64px;
+  line-height: 97.4%;
+  color: #F5EFDE;
+}
+
+.sidenav__menu .sub {
+  font-size: 12px;
+  line-height: 14px;
+  color: #B7B7B7;
+}
+
+/*--------------------------------------------------------------
+# HOMEPAGE
+--------------------------------------------------------------*/
+
+.home-banner {
+  position: relative;
+  height: 900px;
+}
+
+.home-banner__wrap {
+  padding-top: 300px;
+  width: 500px;
+  margin: 0px auto;
+  -webkit-transform: translateX(-15%);
+  transform: translateX(-15%);
+}
+
+.home-banner__title {
+  font-size: 101px;
+  line-height: 97.4%;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 25px;
+}
+
+.home-banner__lead {
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 75px;
+}
+
+.home-banner__left {
+  position: absolute;
+  left: 80px;
+  bottom: 75px;
+}
+
+.home-banner__right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 495px;
+}
+
+.home-banner__button--left, .home-stockist__button{
+  padding: 22px 37px;
+  font-size: 15px;
+  line-height: 97.4%;
+  margin-right: 50px;
+}
+
+.home-video__title {
+  font-size: 42px;
+  line-height: 120%;
+  margin-bottom: 50px;
+  color: #F5EFDE;
+}
+
+.home-video__product-logos img {
+  width: auto !important;
+}
+
+.home-video__product-logos .owl-dots {
+  margin-top: 50px !important;
+}
+
+.home-products .home-product:nth-child(2n+2) {
+  background: #000000;
+  color: #ffffff;
+}
+
+.home-product__wrap, .home-video__wrap {
+  padding: 100px 50px;
+  max-width: 630px;
+  position: relative;
+}
+
+.home-product__title {
+  font-size: 72px;
+  line-height: 97.4%;
+}
+
+.home-product__image {
+  width: 100%;
+  height: 100%;
+}
+
+.home-product__logo {
+  position: absolute;
+  right: 50px;
+  bottom: 100px;
+}
+
+.home-product__lead {
+  margin-bottom: 50px;
+}
+
+.home-product__link--main {
+  margin-bottom: 50px;
+}
+
+.home-product__link--main a{
+  font-size: 42px;
+  line-height: 120%;
+}
+
+.home-product__link--sub {
+  margin-bottom: 30px;
+}
+
+.home-product__link--sub a{
+  font-size: 24px;
+  line-height: 120%;
+  margin-bottom: 30px;
+}
+.home-products .home-product:nth-child(2n+2) .home-product__links a {
+  color: #ffffff;
+}
+
+.home-stockist {
+  padding: 110px 0px 150px;
+  color: #ffffff;
+}
+
+.home-stockist__wrap {
+  max-width: 520px;
+  margin: 0px auto;
+}
+
+.home-stockist__title {
+  font-size: 72px;
+  line-height: 97.4%;
+  color: #F5EFDE;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.home-stockist__lead {
+  margin-bottom: 40px;
+}
+
+.home-stockist__button {
+  border-radius: 0px;
+  border-width: 2px;
+}
+
+.home-blog {
+  padding: 145px 0px;
+}
+
+.home-blog__title {
+  font-size: 72px;
+  line-height: 97.4%;
+  max-width: 500px;
+  margin: 0px auto 20px;
+}
+
+.home-blog__lead {
+  font-size: 16px;
+  line-height: 140%;
+  max-width: 450px;
+  margin: 0px auto 70px;
+}
+
+.home-blog__post h4 {
+  height: 130px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000;
+}
+
+.home-blog__post h4 a {
+  font-size: 33px;
+  line-height: 120%;
+}
+
+.home-blog__post__read-more {
+  font-size: 14px;
+  line-height: 120%;
+}
+
+.home-blog__post__see-all {
+  display: block;
+  padding-top: 100%;
+  background: #000000;
+}
+
+.home-blog__post__see-all span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.owl-carousel .nav-btn{
+  position: absolute;
+  height: 15px;
+  width: 49px;
+  cursor: pointer;
+  top: 35%;
+}
+
+.owl-carousel .owl-prev.disabled,
+.owl-carousel .owl-next.disabled{
+  pointer-events: none;
+  opacity: 0.2;
+}
+
+.owl-carousel .prev-slide{
+  background: url(assets/images/prev-arrow.png) no-repeat;
+  left: -100px;
+}
+.owl-carousel .next-slide{
+  background: url(assets/images/next-arrow.png) no-repeat;
+  right: -100px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 5px !important;
+  height: 5px !important;
+  border-radius: 0px !important;
+}
