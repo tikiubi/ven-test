@@ -25,7 +25,7 @@ jQuery( function ( $ ) {
         $('.js-transition-left').toggleClass('margin-left-500');
 
         let $toggle_text = $('.js-sidebar-toggle_text');
-        let toggle_text = $(this).hasClass('open') ? $toggle_text.data('close') : $toggle_text.data('open');ssss
+        let toggle_text = $(this).hasClass('open') ? $toggle_text.data('close') : $toggle_text.data('open');
         $toggle_text.text(toggle_text);
 
         $(this).toggleClass('open', 'closed');
